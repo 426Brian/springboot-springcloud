@@ -1,0 +1,13 @@
+server:
+  port: 8762
+spring:
+  application:
+    name: provider-ticket
+
+eureka:
+  instance:
+    prefer-ip-address: true  # 注册服务的时候使用服务地址
+  client:
+    register-with-eureka: false # 不注册自己
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
